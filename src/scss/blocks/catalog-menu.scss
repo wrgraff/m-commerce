@@ -1,0 +1,25 @@
+.catalog-menu {
+	display: flex;
+	padding: 0;
+
+	list-style: none;
+
+	font-size: 20px;
+}
+
+.catalog-menu__submenu {
+	display: none;
+}
+
+.catalog-menu__link {
+	padding: 10px 15px;
+
+	color: var(--color-black);
+	border-radius: 2px;
+
+	transition: background-color 250ms;
+
+	&:hover {
+		background-color: var(--color-gray-50);
+	}
+}

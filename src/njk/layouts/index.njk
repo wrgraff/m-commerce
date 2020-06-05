@@ -34,16 +34,14 @@
     <meta property="og:locale" content="ru_RU" />
 </head>
 
-<body class="no-js">
-    <div class="page">
-        {% include "blocks/page-header.njk" %}
+<body class="page no-js">
+    {% include "blocks/page-header.njk" %}
 
-        <main class="page__main page-main">
-            {% block content %}
-            {% endblock %}
-        </main>
+    <main class="page__main page-main">
+        {% block content %}
+        {% endblock %}
+    </main>
 
-        {% include "blocks/page-footer.njk" %}
-    </div>
+    {% include "blocks/page-footer.njk" %}
 </body>
 </html>

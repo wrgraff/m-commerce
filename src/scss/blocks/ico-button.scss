@@ -1,0 +1,49 @@
+.ico-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 46px;
+	height: 46px;
+
+	background-color: transparent;
+	border: none;
+	border-radius: 2px;
+
+	transition: background-color 250ms;
+
+	&:hover {
+		background-color: var(--color-gray-50);
+	}
+}
+
+.ico-button__badge {
+	display: block;
+	width: 18px;
+	height: 18px;
+
+	color: var(--color-white);
+	background-color: var(--color-primary);
+	border-radius: 50%;
+
+	font-size: 12px;
+	text-align: center;
+	font-weight: 500;
+}
+
+.ico-button_menu {
+	&::after {
+		content: '';
+		width: 20px;
+		height: 3px;
+
+		background-color: var(--color-black);
+		border-radius: 2px;
+		box-shadow: 0 6px var(--color-black), 0 -6px var(--color-black);
+
+		transition: box-shadow 250ms;
+	}
+
+	&:hover::after {
+		box-shadow: 0 8px var(--color-black), 0 -8px var(--color-black);
+	}
+}

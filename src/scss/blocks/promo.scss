@@ -1,0 +1,17 @@
+.promo {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 20px;
+}
+
+.promo__item {
+	grid-column: span 4;
+}
+
+.promo__item_small {
+	grid-column: span 3;
+}
+
+.promo__item_large {
+	grid-column: span 6;
+}

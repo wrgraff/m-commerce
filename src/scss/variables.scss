@@ -13,6 +13,12 @@
 	--color-secondary-alpha: 1;
 	--color-secondary: hsla(var(--color-secondary-hue), var(--color-secondary-saturation), var(--color-secondary-lightness), var(--color-secondary-alpha));
 
+	// Black and white
+	--color-white: hsla(0, 0%, 100%, 1);
+	--color-black: hsla(0, 0%, 0%, 1);
+	--color-gray-50: hsla(0, 0%, 95%, 1);
+	--color-gray-100: hsla(0, 0%, 90%, 1);
+
 	// Breakpoints
 	--breakpoint-medium: 768px;
 	--breakpoint-large: 1000px;

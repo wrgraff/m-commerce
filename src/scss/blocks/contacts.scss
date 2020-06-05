@@ -1,0 +1,15 @@
+.contacts {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	text-align: right;
+}
+
+.contacts__link {
+	color: var(--color-bw);
+
+	&:hover {
+		color: var(--color-primary);
+	}
+}

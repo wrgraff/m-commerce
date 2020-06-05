@@ -1,0 +1,15 @@
+.page-main {
+	padding: 32px;
+}
+
+.page-main__heading {
+	max-width: var(--page-max-width);
+	margin: 0 auto 32px;
+
+	text-align: center;
+}
+
+.page-main__section {
+	max-width: var(--page-max-width);
+	margin: 0 auto;
+}
