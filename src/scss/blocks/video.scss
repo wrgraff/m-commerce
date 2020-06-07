@@ -1,0 +1,19 @@
+.video {
+	padding: 32px;
+
+	color: var(--color-white);
+	background-color: var(--color-black);
+
+	text-align: center;
+}
+
+.video__heading {
+	font-size: 50px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.video__text {
+	max-width: 420px;
+	margin: 0 auto;
+}
