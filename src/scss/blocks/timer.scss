@@ -1,0 +1,41 @@
+.timer {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+
+	color: var(--color-white);
+	background-color: var(--color-black);
+	background-position: 50% 50%;
+	background-size: cover;
+	background-image: url(../img/bg/time.jpg);
+	border-radius: 2px;
+
+	text-align: center;
+}
+
+.timer__link {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.timer__heading {
+	font-size: 22px;
+	font-weight: 500;
+}
+
+.timer__time {
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.timer__button {
+	position: relative;
+	z-index: 2;
+}

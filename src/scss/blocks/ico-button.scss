@@ -6,6 +6,9 @@
 	height: 46px;
 
 	background-color: transparent;
+	background-size: 32px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
 	border: none;
 	border-radius: 2px;
 
@@ -16,10 +19,34 @@
 	}
 }
 
+.ico-button_small {
+	width: 40px;
+	height: 40px;
+
+	background-size: 24px;
+}
+
+.ico-button_login {
+	background-image: url('../img/ico/person-24px.svg');
+}
+
+.ico-button_cart {
+	background-image: url('../img/ico/shopping_cart-24px.svg');
+}
+
+.ico-button_favorites {
+	background-image: url('../img/ico/star_border-24px.svg');
+}
+
+.ico-button_compare {
+	background-image: url('../img/ico/playlist_add-24px.svg');
+}
+
 .ico-button__badge {
 	display: block;
 	width: 18px;
 	height: 18px;
+	margin: -24px -24px 0 0;
 
 	color: var(--color-white);
 	background-color: var(--color-primary);

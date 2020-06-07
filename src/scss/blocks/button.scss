@@ -1,0 +1,70 @@
+.button {
+	--button-color: var(--color-primary);
+
+	position: relative;
+	z-index: 0;
+
+	display: inline-block;
+	padding: 8px 20px;
+	overflow: hidden;
+
+	color: var(--color-white);
+	background-color: var(--button-color);
+	border-radius: 2px;
+
+	text-transform: uppercase;
+	font-weight: 500;
+
+	transition: color 250ms, box-shadow 250ms;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: -10px;
+		bottom: 0;
+		left: -10px;
+		z-index: -1;
+
+		background-color: var(--color-black);
+		opacity: 0;
+
+		transition: opacity 250ms, transform 250ms;
+		transform: skewX(-10deg) scaleX(.5);
+	}
+
+	&:hover,
+	&:focus {
+		&::before {
+			opacity: .2;
+			transform: skewX(-10deg) scaleX(1);
+		}
+	}
+
+	&:focus {
+		outline: 2px solid var(--button-color);
+		outline-offset: 2px;
+	}
+
+	&:active {
+		box-shadow: 0 4px 8px -4px rgba(0, 0, 0, .3);
+
+		&:hover {
+			outline: none;
+		}
+	}
+}
+
+.button_black {
+	--button-color: var(--color-black);
+}
+
+.button_hollow {
+	color: var(--button-color);
+	background-color: transparent;
+	border: 2px solid var(--button-color);
+
+	&::before {
+		background-color: var(--button-color);
+	}
+}

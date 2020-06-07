@@ -19,7 +19,12 @@
 
 	transition: background-color 250ms;
 
-	&:hover {
+	&:hover,
+	&:focus {
 		background-color: var(--color-gray-50);
+	}
+
+	&:focus {
+		outline-offset: 0;
 	}
 }

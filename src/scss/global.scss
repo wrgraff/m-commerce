@@ -1,17 +1,29 @@
 body {
 	min-width: var(--page-min-width);
 
-	color: var(--color-bw);
-
 	font-family: $font-family, 'Helvetica Neue', 'Segoe UI', sans-serif;
 	font-weight: 300;
     line-height: 1.5;
 }
 
 a {
-	color: var(--color-primary);
-
 	text-decoration: none;
+	transition: color 250ms;
+
+	&:focus {
+		outline: 2px solid var(--color-primary);
+		outline-offset: 2px;
+	}
+
+	&:not([class]) {
+		color: var(--color-primary);
+
+		transition: color 250ms;
+
+		&:hover {
+			color: var(--color-black);
+		}
+	}
 }
 
 p {

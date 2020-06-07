@@ -1,23 +1,10 @@
 :root {
-	// Primary colors
-	--color-primary-hue: 344;
-	--color-primary-saturation: 100%;
-	--color-primary-lightness: 45%;
-	--color-primary-alpha: 1;
-	--color-primary: hsla(var(--color-primary-hue), var(--color-primary-saturation), var(--color-primary-lightness), var(--color-primary-alpha));
-
-	// Secondary colors
-	--color-secondary-hue: 206;
-	--color-secondary-saturation: 50%;
-	--color-secondary-lightness: 50%;
-	--color-secondary-alpha: 1;
-	--color-secondary: hsla(var(--color-secondary-hue), var(--color-secondary-saturation), var(--color-secondary-lightness), var(--color-secondary-alpha));
-
-	// Black and white
-	--color-white: hsla(0, 0%, 100%, 1);
-	--color-black: hsla(0, 0%, 0%, 1);
-	--color-gray-50: hsla(0, 0%, 95%, 1);
-	--color-gray-100: hsla(0, 0%, 90%, 1);
+	--color-primary: #e4003e;
+	--color-secondary: #3d84bb;
+	--color-purple: #5e2483;
+	--color-white: #fff;
+	--color-black: #000;
+	--color-gray-50: #f3f3f3;
 
 	// Breakpoints
 	--breakpoint-medium: 768px;

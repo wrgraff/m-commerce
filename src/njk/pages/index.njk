@@ -12,16 +12,35 @@
 		<h2 class="visually-hidden">Самое важное</h2>
 
 		<article class="promo__item promo__item_small timer">
-			<h3 class="visually-hidden">Распродажа</h3>
+			<a href="#" class="timer__link">
+				<h3 class="visually-hidden">Распродажа</h3>
+			</a>
 			<p class="timer__heading">Распродаем последние модели уходящего года!</p>
 			<time datetime="2020-07-05 19:00" class="timer__time">до 5 июля</time>
-			<a href="#" class="timer__link">Смотреть товары</a>
+			<a href="#" class="timer__button button">Смотреть товары</a>
 		</article>
 
 		<div class="promo__item promo__item_large slider">
 			<article class="slider__item">
 				<h3 class="visually-hidden">Новые поступления</h3>
-				<img src="https://picsum.photos/580/316?random=0" alt="Новые поступления" class="slider__img">
+				
+				<div class="slider__img">
+					<img src="/img/slider/1.jpg" alt="Новые поступления">
+				</div>
+				
+				<div class="slider__description">
+					<p class="slider__heading">Наконец-то!</p>
+					<p class="slider__text">Нож Garberg поступил в производство и выходит на рынок</p>
+				</div>
+				
+				<a href="#" class="slider__link">
+					<span class="visually-hidden">Смотреть поступления</span>
+				</a>
+			</article>
+
+			<article class="slider__item">
+				<h3 class="visually-hidden">Новые поступления</h3>
+				<img src="/img/slider/2.jpg" alt="Новые поступления" class="slider__img">
 				<p class="slider__heading">Наконец-то!</p>
 				<p class="slider__text">Нож Garberg поступил в производство и выходит на рынок</p>
 				<a href="#" class="slider__link">
@@ -31,17 +50,7 @@
 
 			<article class="slider__item">
 				<h3 class="visually-hidden">Новые поступления</h3>
-				<img src="https://picsum.photos/580/316?random=1" alt="Новые поступления" class="slider__img">
-				<p class="slider__heading">Наконец-то!</p>
-				<p class="slider__text">Нож Garberg поступил в производство и выходит на рынок</p>
-				<a href="#" class="slider__link">
-					<span class="visually-hidden">Смотреть поступления</span>
-				</a>
-			</article>
-
-			<article class="slider__item">
-				<h3 class="visually-hidden">Новые поступления</h3>
-				<img src="https://picsum.photos/580/316?random=2" alt="Новые поступления" class="slider__img">
+				<img src="/img/slider/3.jpg" alt="Новые поступления" class="slider__img">
 				<p class="slider__heading">Наконец-то!</p>
 				<p class="slider__text">Нож Garberg поступил в производство и выходит на рынок</p>
 				<a href="#" class="slider__link">
@@ -51,26 +60,32 @@
 		</div>
 
 		<article class="promo__item promo__item_small card">
-			<img src="https://picsum.photos/280/200?random=3" alt="" class="card__img">
+			<div class="card__img">
+				<img src="/img/catalog/1.jpg" alt="">
+			</div>
+
 			<h3 class="card__heading">
 				<a href="/catalog/category/item/" class="card__link">Нож 3305 РG "MORA KNIFE" Lime</a>
 			</h3>
+
 			<p class="card__price">2 450 руб.</p>
 
-			<a href="/add-to-cart/" class="card__button button">В корзину</a>
-			<a href="/add-to-favorites/" class="card__favorites ico-button">
-				<span class="visually-hidden">Добавить в избранное</span>
-			</a>
-			<a href="/add-to-compare/" class="card__compare ico-button">
-				<span class="visually-hidden">Добавить к сравнению</span>
-			</a>
+			<div class="card__buttons">
+				<a href="/add-to-cart/" class="card__button button">В корзину</a>
+				<a href="/add-to-favorites/" class="card__favorites ico-button ico-button_small ico-button_favorites">
+					<span class="visually-hidden">Добавить в избранное</span>
+				</a>
+				<a href="/add-to-compare/" class="card__compare ico-button ico-button_small ico-button_compare">
+					<span class="visually-hidden">Добавить к сравнению</span>
+				</a>
+			</div>
 		</article>
 
 		<div class="promo__item box" style="background-image: url(https://picsum.photos/380/215?random=4)">
 			<a href="#" class="box__link">Наши покупатели</a>
 		</div>
 
-		<div class="promo__item box" style="background-image: url(https://picsum.photos/380/215?random=5)">
+		<div class="promo__item box" style="background-image: url(/img/bg/choose.png)">
 			<a href="#" class="box__link">Подобрать нож</a>
 		</div>
 
@@ -85,145 +100,161 @@
 		<ul class="section__cards cards">
 			<li class="cards__item">
 				<article class="promo__item promo__item_small card">
-					<img src="https://picsum.photos/280/200?random=3" alt="" class="card__img">
+					<img src="/img/catalog/2.jpg" alt="" class="card__img">
 					<h3 class="card__heading">
 						<a href="/catalog/category/item/" class="card__link">Нож 3305 РG "MORA KNIFE" Lime</a>
 					</h3>
 					<p class="card__price">2 450 руб.</p>
 
-					<a href="/add-to-cart/" class="card__button button">В корзину</a>
-					<a href="/add-to-favorites/" class="card__favorites ico-button">
-						<span class="visually-hidden">Добавить в избранное</span>
-					</a>
-					<a href="/add-to-compare/" class="card__compare ico-button">
-						<span class="visually-hidden">Добавить к сравнению</span>
-					</a>
+					<div class="card__buttons">
+						<a href="/add-to-cart/" class="card__button button">В корзину</a>
+						<a href="/add-to-favorites/" class="card__favorites ico-button ico-button_small ico-button_favorites">
+							<span class="visually-hidden">Добавить в избранное</span>
+						</a>
+						<a href="/add-to-compare/" class="card__compare ico-button ico-button_small ico-button_compare">
+							<span class="visually-hidden">Добавить к сравнению</span>
+						</a>
+					</div>
 				</article>
 			</li>
 
 			<li class="cards__item">
 				<article class="promo__item promo__item_small card">
-					<img src="https://picsum.photos/280/200?random=7" alt="" class="card__img">
+					<img src="/img/catalog/3.jpg" alt="" class="card__img">
 					<h3 class="card__heading">
 						<a href="/catalog/category/item/" class="card__link">Нож 3305 РG "MORA KNIFE" Lime</a>
 					</h3>
 					<p class="card__price">1 343 руб.</p>
 
-					<a href="/add-to-cart/" class="card__button button">В корзину</a>
-					<a href="/add-to-favorites/" class="card__favorites ico-button">
-						<span class="visually-hidden">Добавить в избранное</span>
-					</a>
-					<a href="/add-to-compare/" class="card__compare ico-button">
-						<span class="visually-hidden">Добавить к сравнению</span>
-					</a>
+					<div class="card__buttons">
+						<a href="/add-to-cart/" class="card__button button">В корзину</a>
+						<a href="/add-to-favorites/" class="card__favorites ico-button ico-button_small ico-button_favorites">
+							<span class="visually-hidden">Добавить в избранное</span>
+						</a>
+						<a href="/add-to-compare/" class="card__compare ico-button ico-button_small ico-button_compare">
+							<span class="visually-hidden">Добавить к сравнению</span>
+						</a>
+					</div>
 				</article>
 			</li>
 
 			<li class="cards__item">
 				<article class="promo__item promo__item_small card">
-					<img src="https://picsum.photos/280/200?random=8" alt="" class="card__img">
+					<img src="/img/catalog/4.jpg" alt="" class="card__img">
 					<h3 class="card__heading">
 						<a href="/catalog/category/item/" class="card__link">Нож 3305 РG "MORA KNIFE" Lime</a>
 					</h3>
 					<p class="card__price">12 450 руб.</p>
 
-					<a href="/add-to-cart/" class="card__button button">В корзину</a>
-					<a href="/add-to-favorites/" class="card__favorites ico-button">
-						<span class="visually-hidden">Добавить в избранное</span>
-					</a>
-					<a href="/add-to-compare/" class="card__compare ico-button">
-						<span class="visually-hidden">Добавить к сравнению</span>
-					</a>
+					<div class="card__buttons">
+						<a href="/add-to-cart/" class="card__button button">В корзину</a>
+						<a href="/add-to-favorites/" class="card__favorites ico-button ico-button_small ico-button_favorites">
+							<span class="visually-hidden">Добавить в избранное</span>
+						</a>
+						<a href="/add-to-compare/" class="card__compare ico-button ico-button_small ico-button_compare">
+							<span class="visually-hidden">Добавить к сравнению</span>
+						</a>
+					</div>
 				</article>
 			</li>
 
 			<li class="cards__item">
 				<article class="promo__item promo__item_small card">
-					<img src="https://picsum.photos/280/200?random=9" alt="" class="card__img">
+					<img src="/img/catalog/5.jpg" alt="" class="card__img">
 					<h3 class="card__heading">
 						<a href="/catalog/category/item/" class="card__link">Нож 3305 РG "MORA KNIFE" Lime</a>
 					</h3>
 					<p class="card__price">2 450 руб.</p>
 
-					<a href="/add-to-cart/" class="card__button button">В корзину</a>
-					<a href="/add-to-favorites/" class="card__favorites ico-button">
-						<span class="visually-hidden">Добавить в избранное</span>
-					</a>
-					<a href="/add-to-compare/" class="card__compare ico-button">
-						<span class="visually-hidden">Добавить к сравнению</span>
-					</a>
+					<div class="card__buttons">
+						<a href="/add-to-cart/" class="card__button button">В корзину</a>
+						<a href="/add-to-favorites/" class="card__favorites ico-button ico-button_small ico-button_favorites">
+							<span class="visually-hidden">Добавить в избранное</span>
+						</a>
+						<a href="/add-to-compare/" class="card__compare ico-button ico-button_small ico-button_compare">
+							<span class="visually-hidden">Добавить к сравнению</span>
+						</a>
+					</div>
 				</article>
 			</li>
 
 			<li class="cards__item">
 				<article class="promo__item promo__item_small card">
-					<img src="https://picsum.photos/280/200?random=10" alt="" class="card__img">
+					<img src="/img/catalog/6.jpg" alt="" class="card__img">
 					<h3 class="card__heading">
 						<a href="/catalog/category/item/" class="card__link">Нож 3305 РG "MORA KNIFE" Lime</a>
 					</h3>
 					<p class="card__price">2 450 руб.</p>
 
-					<a href="/add-to-cart/" class="card__button button">В корзину</a>
-					<a href="/add-to-favorites/" class="card__favorites ico-button">
-						<span class="visually-hidden">Добавить в избранное</span>
-					</a>
-					<a href="/add-to-compare/" class="card__compare ico-button">
-						<span class="visually-hidden">Добавить к сравнению</span>
-					</a>
+					<div class="card__buttons">
+						<a href="/add-to-cart/" class="card__button button">В корзину</a>
+						<a href="/add-to-favorites/" class="card__favorites ico-button ico-button_small ico-button_favorites">
+							<span class="visually-hidden">Добавить в избранное</span>
+						</a>
+						<a href="/add-to-compare/" class="card__compare ico-button ico-button_small ico-button_compare">
+							<span class="visually-hidden">Добавить к сравнению</span>
+						</a>
+					</div>
 				</article>
 			</li>
 
 			<li class="cards__item">
 				<article class="promo__item promo__item_small card">
-					<img src="https://picsum.photos/280/200?random=11" alt="" class="card__img">
+					<img src="/img/catalog/7.jpg" alt="" class="card__img">
 					<h3 class="card__heading">
 						<a href="/catalog/category/item/" class="card__link">Нож 3305 РG "MORA KNIFE" Lime</a>
 					</h3>
 					<p class="card__price">2 450 руб.</p>
 
-					<a href="/add-to-cart/" class="card__button button">В корзину</a>
-					<a href="/add-to-favorites/" class="card__favorites ico-button">
-						<span class="visually-hidden">Добавить в избранное</span>
-					</a>
-					<a href="/add-to-compare/" class="card__compare ico-button">
-						<span class="visually-hidden">Добавить к сравнению</span>
-					</a>
+					<div class="card__buttons">
+						<a href="/add-to-cart/" class="card__button button">В корзину</a>
+						<a href="/add-to-favorites/" class="card__favorites ico-button ico-button_small ico-button_favorites">
+							<span class="visually-hidden">Добавить в избранное</span>
+						</a>
+						<a href="/add-to-compare/" class="card__compare ico-button ico-button_small ico-button_compare">
+							<span class="visually-hidden">Добавить к сравнению</span>
+						</a>
+					</div>
 				</article>
 			</li>
 
 			<li class="cards__item">
 				<article class="promo__item promo__item_small card">
-					<img src="https://picsum.photos/280/200?random=12" alt="" class="card__img">
+					<img src="/img/catalog/8.jpg" alt="" class="card__img">
 					<h3 class="card__heading">
 						<a href="/catalog/category/item/" class="card__link">Нож 3305 РG "MORA KNIFE" Lime</a>
 					</h3>
 					<p class="card__price">2 450 руб.</p>
 
-					<a href="/add-to-cart/" class="card__button button">В корзину</a>
-					<a href="/add-to-favorites/" class="card__favorites ico-button">
-						<span class="visually-hidden">Добавить в избранное</span>
-					</a>
-					<a href="/add-to-compare/" class="card__compare ico-button">
-						<span class="visually-hidden">Добавить к сравнению</span>
-					</a>
+					<div class="card__buttons">
+						<a href="/add-to-cart/" class="card__button button">В корзину</a>
+						<a href="/add-to-favorites/" class="card__favorites ico-button ico-button_small ico-button_favorites">
+							<span class="visually-hidden">Добавить в избранное</span>
+						</a>
+						<a href="/add-to-compare/" class="card__compare ico-button ico-button_small ico-button_compare">
+							<span class="visually-hidden">Добавить к сравнению</span>
+						</a>
+					</div>
 				</article>
 			</li>
 
 			<li class="cards__item">
 				<article class="promo__item promo__item_small card">
-					<img src="https://picsum.photos/280/200?random=13" alt="" class="card__img">
+					<img src="/img/catalog/9.jpg" alt="" class="card__img">
 					<h3 class="card__heading">
 						<a href="/catalog/category/item/" class="card__link">Нож 3305 РG "MORA KNIFE" Lime</a>
 					</h3>
 					<p class="card__price">2 450 руб.</p>
 
-					<a href="/add-to-cart/" class="card__button button">В корзину</a>
-					<a href="/add-to-favorites/" class="card__favorites ico-button">
-						<span class="visually-hidden">Добавить в избранное</span>
-					</a>
-					<a href="/add-to-compare/" class="card__compare ico-button">
-						<span class="visually-hidden">Добавить к сравнению</span>
-					</a>
+					<div class="card__buttons">
+						<a href="/add-to-cart/" class="card__button button">В корзину</a>
+						<a href="/add-to-favorites/" class="card__favorites ico-button ico-button_small ico-button_favorites">
+							<span class="visually-hidden">Добавить в избранное</span>
+						</a>
+						<a href="/add-to-compare/" class="card__compare ico-button ico-button_small ico-button_compare">
+							<span class="visually-hidden">Добавить к сравнению</span>
+						</a>
+					</div>
 				</article>
 			</li>
 		</ul>
