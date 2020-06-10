@@ -8,8 +8,7 @@
   },
   "author": "Artur Trifonov",
   "license": "UNLICENSED",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^9.8.0",
     "browser-sync": "^2.26.7",
