@@ -1,10 +1,30 @@
 :root {
-	--color-primary: #e4003e;
-	--color-secondary: #3d84bb;
-	--color-purple: #5e2483;
-	--color-white: #fff;
-	--color-black: #000;
-	--color-gray-50: #f3f3f3;
+	// Monochrome color
+	--color-bw-hs: 0, 0%;
+	--color-black: hsl(var(--color-bw-hs), 0%);
+	--color-white: hsl(var(--color-bw-hs), 100%);
+	--color-gray-50: hsl(var(--color-bw-hs), 95%);
+
+	// Primary color
+    --color-primary-hs: 344, 100%;
+    --color-primary-hsl: var(--color-primary-hs), 50%;
+    --color-primary: hsl(var(--color-primary-hsl));
+    --color-primary-light: hsl(var(--color-primary-hs), 60%);
+    --color-primary-dark: hsl(var(--color-primary-hs), 40%);
+
+	// Secondary color
+    --color-secondary-hs: 206, 50%;
+    --color-secondary-hsl: var(--color-secondary-hs), 50%;
+    --color-secondary: hsl(var(--color-secondary-hsl));
+    --color-secondary-light: hsl(var(--color-secondary-hs), 60%);
+    --color-secondary-dark: hsl(var(--color-secondary-hs), 40%);
+
+	// Accent color
+    --color-accent-hs: 277, 60%;
+    --color-accent-hsl: var(--color-accent-hs), 50%;
+    --color-accent: hsl(var(--color-accent-hsl));
+    --color-accent-light: hsl(var(--color-accent-hs), 60%);
+    --color-accent-dark: hsl(var(--color-accent-hs), 40%);
 
 	// Breakpoints
 	--breakpoint-medium: 768px;

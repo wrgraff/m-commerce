@@ -27,6 +27,8 @@
 	list-style: none;
 	opacity: 0;
 
+	font-size: 16px;
+
 	transform: translateY(32px);
 	transition: transform 250ms, opacity 250ms, visibility 1ms linear 250ms;
 
@@ -36,8 +38,10 @@
 		transform: translateY(0);
 		transition: transform 250ms, opacity 250ms;
 	}
+}
 
-	.catalog-menu__item:last-child {
+.catalog-menu__item {
+	&:last-child {
 		grid-row: span 2;
 	}
 }
@@ -49,7 +53,7 @@
 	color: var(--color-black);
 	border-radius: 2px 2px 0 0;
 
-	transition: background-color 250ms;
+	transition: color 250ms, background-color 250ms;
 
 	&:hover,
 	&:focus {
