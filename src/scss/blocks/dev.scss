@@ -1,0 +1,13 @@
+.dev {
+    color: var(--color-gray-500);
+}
+
+.dev__link {
+    --link-color: hsl(var(--color-primary-hs), 75%);
+
+    color: var(--link-color);
+
+    &:hover {
+        --link-color: hsl(var(--color-primary-hs), 50%);
+    }
+}

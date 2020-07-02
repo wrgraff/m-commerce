@@ -1,0 +1,39 @@
+.footer-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+.footer-menu__catalog {
+    grid-column: span 2;
+}
+
+.footer-menu__heading {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer-menu__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    .footer-menu__catalog & {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+}
+
+.footer-menu__item {
+    margin-bottom: 8px;
+}
+
+.footer-menu__link {
+    color: var(--color-black);
+
+    &:hover {
+        color: var(--color-primary);
+    }
+}

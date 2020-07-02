@@ -1,0 +1,37 @@
+.page-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    width: 100%;
+    max-width: var(--page-max-width);
+    margin: 0 auto;
+    padding: 32px 0 0;
+}
+
+.page-footer__social {
+    grid-row: span 2;
+    margin: 0;
+}
+
+.page-footer__payments {
+    grid-column: span 2;
+    margin: 0;
+}
+
+.page-footer__menu {
+    grid-column: span 2;
+    margin: 0;
+}
+
+.page-footer__dev {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 8px 0;
+
+    text-align: center;
+    font-size: 14px;
+}
+
+.page-footer__contacts-list {
+    margin: 0;
+}
