@@ -1,0 +1,69 @@
+{% set title = 'Шаблон сайта M.COMMERCE' %}
+{% set description = 'Шаблон сайта M.COMMERCE' %}
+{% set keywords = '' %}
+{% set activeTopBar = '/' %}
+
+{% extends '../layouts/index.njk' %}
+
+{% block content %}
+    <ul class="page-main__breadcrumbs breadcrumbs" aria-label="Хлебные крошки">
+        <li class="breadcrumbs__item">
+            <a href="/" class="breadcrumbs__link">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+            Каталог
+        </li>
+    </ul>
+
+	<h1 class="page-main__heading">Каталог</h1>
+
+	<section class="page-main__section categories">
+		<h2 class="visually-hidden">Разделы каталога</h2>
+
+        <ul class="categories__list">
+            <li class="categories__item category">
+                <div class="category__img">
+                    <img src="https://picsum.photos/186/120?random=0" alt="Ножи" />
+                </div>
+                <a href="/catalog/category/" class="category__link">Ножи</a>
+            </li>
+            <li class="categories__item category">
+                <div class="category__img">
+                    <img src="https://picsum.photos/186/120?random=1" alt="Перчатки" />
+                </div>
+                <a href="/catalog/category/" class="category__link">Перчатки</a>
+            </li>
+            <li class="categories__item category">
+                <div class="category__img">
+                    <img src="https://picsum.photos/160/100?random=2" alt="Оборудование" />
+                </div>
+                <a href="/catalog/category/" class="category__link">Оборудование</a>
+            </li>
+            <li class="categories__item category">
+                <div class="category__img">
+                    <img src="https://picsum.photos/186/120?random=3" alt="Сети и аксессуары" />
+                </div>
+                <a href="/catalog/category/" class="category__link">Сети и аксессуары</a>
+            </li>
+            <li class="categories__item category">
+                <div class="category__img">
+                    <img src="https://picsum.photos/186/120?random=4" alt="Консерванты" />
+                </div>
+                <a href="/catalog/category/" class="category__link">Консерванты</a>
+            </li>
+            <li class="categories__item category">
+                <div class="category__img">
+                    <img src="https://picsum.photos/200/120?random=5" alt="Одежда" />
+                </div>
+                <a href="/catalog/category/" class="category__link">Одежда</a>
+            </li>
+        </ul>
+    </section>
+
+	<section class="page-main__section content">
+		<h2 class="content__heading">Просто текст</h2>
+		<div class="content__container">
+			<p> Компания "Хогер"  работает на рынке Камчатского края с 2004 года. Основным направлением нашей деятельности с момента образования являлось комплексное снабжение рыбодобывающих и рыбоперерабатывающих предприятий.</p>
+		</div>
+	</section>
+{% endblock %}

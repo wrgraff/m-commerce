@@ -23,15 +23,22 @@
     margin: 0;
 }
 
+.page-footer__contacts-list {
+    margin: 0;
+}
+
 .page-footer__dev {
     grid-column: 1 / -1;
     margin: 0;
-    padding: 8px 0;
+    padding: 16px 0 8px;
 
     text-align: center;
     font-size: 14px;
 }
 
-.page-footer__contacts-list {
+.page-footer__copyright {
+    align-self: flex-end;
     margin: 0;
+
+    text-align: right;
 }

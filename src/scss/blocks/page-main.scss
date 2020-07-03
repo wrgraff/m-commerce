@@ -4,10 +4,19 @@
 
 .page-main__heading {
 	max-width: var(--page-max-width);
-	margin: 0 auto 32px;
+	margin: 24px auto 8px;
 	padding: 12px 0;
+}
 
-	text-align: center;
+.page-main__heading_main {
+	margin: 0 auto 32px;
+    text-align: center;
+}
+
+.page-main__breadcrumbs {
+    width: 100%;
+    max-width: var(--page-max-width);
+    margin: 0 auto;
 }
 
 .page-main__section {
