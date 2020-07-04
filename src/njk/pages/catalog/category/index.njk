@@ -1,0 +1,417 @@
+{% set title = 'Шаблон сайта M.COMMERCE' %}
+{% set description = 'Шаблон сайта M.COMMERCE' %}
+{% set keywords = '' %}
+{% set activeTopBar = '/' %}
+
+{% extends '../layouts/index.njk' %}
+
+{% block content %}
+    <ul class="page-main__breadcrumbs breadcrumbs" aria-label="Хлебные крошки">
+        <li class="breadcrumbs__item">
+            <a href="/" class="breadcrumbs__link">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+            <a href="/catalog/" class="breadcrumbs__link">Каталог</a>
+        </li>
+        <li class="breadcrumbs__item">
+            Кофе
+        </li>
+    </ul>
+
+	<h1 class="page-main__heading">Кофе</h1>
+
+	<section class="page-main__section categories">
+		<h2 class="visually-hidden">Разделы каталога</h2>
+
+        <ul class="categories__list">
+            <li class="categories__item category">
+                <div class="category__img">
+                    <img src="https://picsum.photos/186/120?random=0" alt="Ножи" />
+                </div>
+                <a href="/catalog/category/" class="category__link">Ножи</a>
+            </li>
+            <li class="categories__item category">
+                <div class="category__img">
+                    <img src="https://picsum.photos/186/120?random=1" alt="Перчатки" />
+                </div>
+                <a href="/catalog/category/" class="category__link">Перчатки</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="page-main__section catalog">
+		<h2 class="visually-hidden">Товары</h2>
+
+        <div class="catalog__text">
+            <p>Традиции, опыт и ноу-хау накопленные за годы работы ножевых фабрик Frosts, KJ Eriksson и Carl Andersson сохранены и используются Mora of Sweden по сей день.</p>
+        </div>
+
+        <div class="catalog__sorting sorting">
+            <h3 class="sorting__heading">Сортировать:</h3>
+
+            <ul class="sorting__list">
+                <li class="sorting__item sorting__item_desc">
+                    <a href="#" class="sorting__link">По рейтингу</a>
+                </li>
+                <li class="sorting__item">
+                    <a href="#" class="sorting__link">По цене</a>
+                </li>
+                <li class="sorting__item">
+                    <a href="#" class="sorting__link">По новизне</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="catalog__filter filter">
+            <h3 class="filter__heading">Фильтр</h3>
+
+            <form action="https://echo.htmlacademy.ru/" class="filter__form">
+                <fieldset class="filter__fieldset">
+                    <legend class="filter__legend">Цена</legend>
+
+                    <div class="filter__range range">
+                        <label class="range__field">
+                            <span class="visually-hidden">От </span>
+                            <input type="number" name="range-from" class="range__input" value="0" min="0" max="12450" step="10">
+                        </label>
+
+                        <label class="range__field">
+                            <span class="visually-hidden">До </span>
+                            <input type="number" name="range-to" class="range__input" value="12450" min="0" max="12450" step="10">
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="filter__fieldset">
+                    <legend class="filter__legend">Материал ручки</legend>
+
+                    <ul class="filter__list">
+                        <li class="filter__item">
+                            <label class="checkbox">
+                                <input type="checkbox" name="material" value="polypropylene" class="checkbox__input">
+                                <span class="checkbox__text">Полипропилен</span>
+                            </label>
+                        </li>
+                        <li class="filter__item">
+                            <label class="checkbox">
+                                <input type="checkbox" name="material" value="rubberized" class="checkbox__input">
+                                <span class="checkbox__text">Прорезиненная</span>
+                            </label>
+                        </li>
+                        <li class="filter__item">
+                            <label class="checkbox">
+                                <input type="checkbox" name="material" value="propylene" class="checkbox__input">
+                                <span class="checkbox__text">Пропилен</span>
+                            </label>
+                        </li>
+                        <li class="filter__item">
+                            <label class="checkbox">
+                                <input type="checkbox" name="material" value="polyamide" class="checkbox__input">
+                                <span class="checkbox__text">Полиамид</span>
+                            </label>
+                        </li>
+                        <li class="filter__item">
+                            <label class="checkbox">
+                                <input type="checkbox" name="material" value="rubber" class="checkbox__input">
+                                <span class="checkbox__text">Резиновая</span>
+                            </label>
+                        </li>
+                        <li class="filter__item">
+                            <label class="checkbox">
+                                <input type="checkbox" name="material" value="wooden" class="checkbox__input">
+                                <span class="checkbox__text">Деревянная</span>
+                            </label>
+                        </li>
+                        <li class="filter__item">
+                            <label class="checkbox">
+                                <input type="checkbox" name="material" value="rubber-band" class="checkbox__input">
+                                <span class="checkbox__text">Обрезине</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset class="filter__fieldset">
+                    <legend class="filter__legend">Вид стали</legend>
+
+                    <ul class="filter__list">
+                        <li class="filter__item">
+                            <label class="checkbox">
+                                <input type="checkbox" name="steel" value="stainless" class="checkbox__input">
+                                <span class="checkbox__text">Нержавеющая</span>
+                            </label>
+                        </li>
+                        <li class="filter__item">
+                            <label class="checkbox">
+                                <input type="checkbox" name="steel" value="high-carbon" class="checkbox__input">
+                                <span class="checkbox__text">Высокоуглеродистая</span>
+                            </label>
+                        </li>
+                        <li class="filter__item">
+                            <label class="checkbox">
+                                <input type="checkbox" name="steel" value="carbon" class="checkbox__input">
+                                <span class="checkbox__text">Углеродистая</span>
+                            </label>
+                        </li>
+                        <li class="filter__item">
+                            <label class="checkbox">
+                                <input type="checkbox" name="steel" value="laminated" class="checkbox__input">
+                                <span class="checkbox__text">Ламинированная</span>
+                            </label>
+                        </li>
+                        <li class="filter__item">
+                            <label class="checkbox">
+                                <input type="checkbox" name="steel" value="triflex" class="checkbox__input">
+                                <span class="checkbox__text">Triflex</span>
+                            </label>
+                        </li>
+                        <li class="filter__item">
+                            <label class="checkbox">
+                                <input type="checkbox" name="steel" value="boron" class="checkbox__input">
+                                <span class="checkbox__text">Бористая</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset class="filter__fieldset">
+                    <legend class="filter__legend">Длина лезвия</legend>
+
+                    <div class="filter__range range">
+                        <label class="range__field">
+                            <span class="visually-hidden">От </span>
+                            <input type="number" name="range-from" class="range__input" value="800" min="800" max="9000" step="10">
+                        </label>
+
+                        <label class="range__field">
+                            <span class="visually-hidden">До </span>
+                            <input type="number" name="range-to" class="range__input" value="9000" min="800" max="9000" step="10">
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="form__actions">
+                    <button type="submit" class="form__button button">Применить</button>
+                    <button type="reset" class="form__button button">Сбросить</button>
+                </div>
+            </form>
+        </div>
+
+        <ul class="catalog__cards cards" aria-label="Товары">
+			<li class="cards__item">
+				<article class="promo__item promo__item_small card">
+					<div class="card__img">
+						<img src="/img/catalog/2.jpg" alt="">
+					</div>
+					<h3 class="card__heading">
+						<a href="/catalog/category/item/" class="card__link">Нож 3305 РG "MORA KNIFE" Lime</a>
+					</h3>
+					<p class="card__price">2 450 руб.</p>
+
+					<div class="card__buttons">
+						<a href="/add-to-cart/" class="card__button button">В корзину</a>
+						<a href="/add-to-favorites/" class="card__favorites ico-button ico-button_small ico-button_favorites">
+							<span class="visually-hidden">Добавить в избранное</span>
+						</a>
+						<a href="/add-to-compare/" class="card__compare ico-button ico-button_small ico-button_compare">
+							<span class="visually-hidden">Добавить к сравнению</span>
+						</a>
+					</div>
+				</article>
+			</li>
+
+			<li class="cards__item">
+				<article class="promo__item promo__item_small card">
+					<div class="card__img">
+						<img src="/img/catalog/3.jpg" alt="">
+					</div>
+					<h3 class="card__heading">
+						<a href="/catalog/category/item/" class="card__link">Нож 3305 РG "MORA KNIFE" Lime</a>
+					</h3>
+					<p class="card__price">1 343 руб.</p>
+
+					<div class="card__buttons">
+						<a href="/add-to-cart/" class="card__button button">В корзину</a>
+						<a href="/add-to-favorites/" class="card__favorites ico-button ico-button_small ico-button_favorites">
+							<span class="visually-hidden">Добавить в избранное</span>
+						</a>
+						<a href="/add-to-compare/" class="card__compare ico-button ico-button_small ico-button_compare">
+							<span class="visually-hidden">Добавить к сравнению</span>
+						</a>
+					</div>
+				</article>
+			</li>
+
+			<li class="cards__item">
+				<article class="promo__item promo__item_small card">
+					<div class="card__img">
+						<img src="/img/catalog/4.jpg" alt="">
+					</div>
+					<h3 class="card__heading">
+						<a href="/catalog/category/item/" class="card__link">Нож 3305 РG "MORA KNIFE" Lime</a>
+					</h3>
+					<p class="card__price">12 450 руб.</p>
+
+					<div class="card__buttons">
+						<a href="/add-to-cart/" class="card__button button">В корзину</a>
+						<a href="/add-to-favorites/" class="card__favorites ico-button ico-button_small ico-button_favorites">
+							<span class="visually-hidden">Добавить в избранное</span>
+						</a>
+						<a href="/add-to-compare/" class="card__compare ico-button ico-button_small ico-button_compare">
+							<span class="visually-hidden">Добавить к сравнению</span>
+						</a>
+					</div>
+				</article>
+			</li>
+
+			<li class="cards__item">
+				<article class="promo__item promo__item_small card">
+					<div class="card__img">
+						<img src="/img/catalog/5.jpg" alt="">
+					</div>
+					<h3 class="card__heading">
+						<a href="/catalog/category/item/" class="card__link">Нож 3305 РG "MORA KNIFE" Lime</a>
+					</h3>
+					<p class="card__price">2 450 руб.</p>
+
+					<div class="card__buttons">
+						<a href="/add-to-cart/" class="card__button button">В корзину</a>
+						<a href="/add-to-favorites/" class="card__favorites ico-button ico-button_small ico-button_favorites">
+							<span class="visually-hidden">Добавить в избранное</span>
+						</a>
+						<a href="/add-to-compare/" class="card__compare ico-button ico-button_small ico-button_compare">
+							<span class="visually-hidden">Добавить к сравнению</span>
+						</a>
+					</div>
+				</article>
+			</li>
+
+			<li class="cards__item">
+				<article class="promo__item promo__item_small card">
+					<div class="card__img">
+						<img src="/img/catalog/6.jpg" alt="">
+					</div>
+					<h3 class="card__heading">
+						<a href="/catalog/category/item/" class="card__link">Нож 3305 РG "MORA KNIFE" Lime</a>
+					</h3>
+					<p class="card__price">2 450 руб.</p>
+
+					<div class="card__buttons">
+						<a href="/add-to-cart/" class="card__button button">В корзину</a>
+						<a href="/add-to-favorites/" class="card__favorites ico-button ico-button_small ico-button_favorites">
+							<span class="visually-hidden">Добавить в избранное</span>
+						</a>
+						<a href="/add-to-compare/" class="card__compare ico-button ico-button_small ico-button_compare">
+							<span class="visually-hidden">Добавить к сравнению</span>
+						</a>
+					</div>
+				</article>
+			</li>
+
+			<li class="cards__item">
+				<article class="promo__item promo__item_small card">
+					<div class="card__img">
+						<img src="/img/catalog/7.jpg" alt="">
+					</div>
+					<h3 class="card__heading">
+						<a href="/catalog/category/item/" class="card__link">Нож 3305 РG "MORA KNIFE" Lime</a>
+					</h3>
+					<p class="card__price">2 450 руб.</p>
+
+					<div class="card__buttons">
+						<a href="/add-to-cart/" class="card__button button">В корзину</a>
+						<a href="/add-to-favorites/" class="card__favorites ico-button ico-button_small ico-button_favorites">
+							<span class="visually-hidden">Добавить в избранное</span>
+						</a>
+						<a href="/add-to-compare/" class="card__compare ico-button ico-button_small ico-button_compare">
+							<span class="visually-hidden">Добавить к сравнению</span>
+						</a>
+					</div>
+				</article>
+			</li>
+
+			<li class="cards__item">
+				<article class="promo__item promo__item_small card">
+					<div class="card__img">
+						<img src="/img/catalog/8.jpg" alt="">
+					</div>
+					<h3 class="card__heading">
+						<a href="/catalog/category/item/" class="card__link">Нож 3305 РG "MORA KNIFE" Lime</a>
+					</h3>
+					<p class="card__price">2 450 руб.</p>
+
+					<div class="card__buttons">
+						<a href="/add-to-cart/" class="card__button button">В корзину</a>
+						<a href="/add-to-favorites/" class="card__favorites ico-button ico-button_small ico-button_favorites">
+							<span class="visually-hidden">Добавить в избранное</span>
+						</a>
+						<a href="/add-to-compare/" class="card__compare ico-button ico-button_small ico-button_compare">
+							<span class="visually-hidden">Добавить к сравнению</span>
+						</a>
+					</div>
+				</article>
+			</li>
+
+			<li class="cards__item">
+				<article class="promo__item promo__item_small card">
+					<div class="card__img">
+						<img src="/img/catalog/9.jpg" alt="">
+					</div>
+					<h3 class="card__heading">
+						<a href="/catalog/category/item/" class="card__link">Нож 3305 РG "MORA KNIFE" Lime</a>
+					</h3>
+					<p class="card__price">2 450 руб.</p>
+
+					<div class="card__buttons">
+						<a href="/add-to-cart/" class="card__button button">В корзину</a>
+						<a href="/add-to-favorites/" class="card__favorites ico-button ico-button_small ico-button_favorites">
+							<span class="visually-hidden">Добавить в избранное</span>
+						</a>
+						<a href="/add-to-compare/" class="card__compare ico-button ico-button_small ico-button_compare">
+							<span class="visually-hidden">Добавить к сравнению</span>
+						</a>
+					</div>
+				</article>
+			</li>
+		</ul>
+
+        <div class="catalog__pagination pagination">
+            <h3 class="visually-hidden">Список страниц</h3>
+
+            <ul class="pagination__list">
+                <li class="pagination__item pagination__item_previous">
+                    <a href="#" class="pagination__link">
+                        <span class="visually-hidden">Предыдущая страница</span>
+                    </a>
+                </li>
+                <li class="pagination__item pagination__item_active">
+                    <span class="visually-hidden">Текущая страница:</span> 1
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__link">2</a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__link">3</a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__link">4</a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__link">5</a>
+                </li>
+                <li class="pagination__item pagination__item_next">
+                    <a href="#" class="pagination__link">
+                        <span class="visually-hidden">Следующая страница</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+	<section class="page-main__section content">
+		<h2 class="content__heading">Просто текст</h2>
+		<div class="content__container">
+			<p> Компания "Хогер"  работает на рынке Камчатского края с 2004 года. Основным направлением нашей деятельности с момента образования являлось комплексное снабжение рыбодобывающих и рыбоперерабатывающих предприятий.</p>
+		</div>
+	</section>
+{% endblock %}

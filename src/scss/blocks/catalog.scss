@@ -1,0 +1,36 @@
+.catalog {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        'text .'
+        'sorting filter'
+        'cards filter'
+        'pagination .';
+    gap: 20px;
+}
+
+.catalog__text {
+    grid-area: text;
+    margin-bottom: 24px;
+
+    > *:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.catalog__sorting {
+    grid-area: sorting;
+}
+
+.catalog__filter {
+    grid-area: filter;
+}
+
+.catalog__cards {
+    grid-area: cards;
+    margin: 0;
+}
+
+.catalog__pagination {
+    grid-area: pagination;
+}

@@ -10,7 +10,8 @@
 	overflow: hidden;
 
 	color: var(--button-color);
-	background-color: var(--button-bg);
+    background-color: var(--button-bg);
+    border: none;
 	border-radius: 2px;
 
 	text-transform: uppercase;
@@ -31,13 +32,13 @@
 		opacity: 0;
 
 		transition: opacity 250ms, transform 250ms;
-		transform: skewX(-10deg) scaleX(.5);
+		transform: skewX(-10deg) scaleX(.25);
 	}
 
 	&:hover,
 	&:focus {
 		&::before {
-			opacity: .2;
+			opacity: .3;
 			transform: skewX(-10deg) scaleX(1);
 		}
 	}
