@@ -70,15 +70,17 @@
                     <legend class="filter__legend">Цена</legend>
 
                     <div class="filter__range range">
-                        <label class="range__field">
-                            <span class="visually-hidden">От </span>
-                            <input type="number" name="range-from" class="range__input" value="0" min="0" max="12450" step="10">
-                        </label>
+                        <div class="range__fields">
+                            <label class="range__field field">
+                                <span class="visually-hidden">От </span>
+                                <input type="number" name="range-from" class="range__input field__input" value="0" min="0" max="12450" step="10">
+                            </label>
 
-                        <label class="range__field">
-                            <span class="visually-hidden">До </span>
-                            <input type="number" name="range-to" class="range__input" value="12450" min="0" max="12450" step="10">
-                        </label>
+                            <label class="range__field field">
+                                <span class="visually-hidden">До </span>
+                                <input type="number" name="range-to" class="range__input field__input" value="12450" min="0" max="12450" step="10">
+                            </label>
+                        </div>
                     </div>
                 </fieldset>
 
@@ -94,19 +96,19 @@
                         </li>
                         <li class="filter__item">
                             <label class="checkbox">
-                                <input type="checkbox" name="material" value="rubberized" class="checkbox__input">
-                                <span class="checkbox__text">Прорезиненная</span>
+                                <input type="checkbox" name="material" value="rubberized" class="checkbox__input" checked>
+                                <span class="checkbox__text">Прорезиненная такая штуковина</span>
                             </label>
                         </li>
                         <li class="filter__item">
                             <label class="checkbox">
-                                <input type="checkbox" name="material" value="propylene" class="checkbox__input">
+                                <input type="checkbox" name="material" value="propylene" class="checkbox__input" disabled>
                                 <span class="checkbox__text">Пропилен</span>
                             </label>
                         </li>
                         <li class="filter__item">
                             <label class="checkbox">
-                                <input type="checkbox" name="material" value="polyamide" class="checkbox__input">
+                                <input type="checkbox" name="material" value="polyamide" class="checkbox__input" disabled checked>
                                 <span class="checkbox__text">Полиамид</span>
                             </label>
                         </li>
@@ -178,21 +180,23 @@
                     <legend class="filter__legend">Длина лезвия</legend>
 
                     <div class="filter__range range">
-                        <label class="range__field">
-                            <span class="visually-hidden">От </span>
-                            <input type="number" name="range-from" class="range__input" value="800" min="800" max="9000" step="10">
-                        </label>
+                        <div class="range__fields">
+                            <label class="range__field field">
+                                <span class="visually-hidden">От </span>
+                                <input type="number" name="range-from" class="range__input field__input" value="800" min="800" max="9000" step="10">
+                            </label>
 
-                        <label class="range__field">
-                            <span class="visually-hidden">До </span>
-                            <input type="number" name="range-to" class="range__input" value="9000" min="800" max="9000" step="10">
-                        </label>
+                            <label class="range__field field">
+                                <span class="visually-hidden">До </span>
+                                <input type="number" name="range-to" class="range__input field__input" value="9000" min="800" max="9000" step="10">
+                            </label>
+                        </div>
                     </div>
                 </fieldset>
 
-                <div class="form__actions">
-                    <button type="submit" class="form__button button">Применить</button>
-                    <button type="reset" class="form__button button">Сбросить</button>
+                <div class="filter__actions">
+                    <button type="submit" class="filter__button button button_small">Применить</button>
+                    <button type="reset" class="filter__button button button_gray button_small">Сбросить</button>
                 </div>
             </form>
         </div>

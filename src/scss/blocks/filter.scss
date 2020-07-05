@@ -10,6 +10,49 @@
 }
 
 .filter__form {
+    padding: 24px;
+
     background-color: var(--color-white);
     border-radius: 2px;
+}
+
+.filter__fieldset {
+    margin: 0 0 24px 0;
+    padding: 0;
+
+    border: none;
+}
+
+.filter__legend {
+    margin-bottom: 8px;
+    padding: 0;
+
+    color: var(--color-gray-800);
+
+    font-weight: 700;
+}
+
+.filter__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.filter__item {
+    & + & {
+        margin-top: 8px;
+    }
+}
+
+.filter__actions {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin: 0 -4px -8px;
+}
+
+.filter__button {
+    flex-grow: 1;
+    margin: 0 4px 8px;
 }

@@ -1,0 +1,22 @@
+.range__fields {
+    display: flex;
+    align-items: center;
+
+    &::after {
+        content: '';
+        height: 2px;
+        width: 16px;
+        margin: 0 8px;
+
+        background-color: var(--color-gray-300);
+    }
+}
+
+.range__field {
+    flex-grow: 1;
+    width: 0;
+
+    &:last-child {
+        order: 1;
+    }
+}

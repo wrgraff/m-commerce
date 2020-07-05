@@ -57,8 +57,17 @@
 	}
 }
 
+.button_small {
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
 .button_black {
 	--button-bg: var(--color-black);
+}
+
+.button_gray {
+	--button-bg: var(--color-gray-500);
 }
 
 .button_hollow {

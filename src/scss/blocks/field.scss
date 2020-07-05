@@ -1,0 +1,27 @@
+.field__input {
+    --field-color-hs: var(--color-bw-hs);
+    --field-color-l: 70%;
+    --field-color: hsl(var(--field-color-hs), var(--field-color-l));
+
+    width: 100%;
+    padding: 8px;
+    border: 2px solid var(--field-color);
+    border-radius: 2px;
+
+    line-height: 24px;
+    font-weight: 500;
+
+    transition: border-color 250ms;
+
+    &:hover {
+        --field-color-l: 50%;
+    }
+
+    &:focus {
+        --field-color-hs: var(--color-secondary-hs);
+        --field-color-l: 50%;
+        --field-shadow-color: hsl(var(--field-color-hs), 85%);
+
+        box-shadow: 0 0 0 3px var(--field-shadow-color);
+    }
+}
